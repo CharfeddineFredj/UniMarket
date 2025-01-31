@@ -1,0 +1,51 @@
+.container
+{margin-top: 140px;
+}
+.body {
+  background: white;
+}
+
+#register {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.card * {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.fix{
+  background-color: rgb(238, 244, 255)!important;
+  min-height: 748.4px;
+  padding: 3rem ;
+}
+
+.text-center a:hover
+{
+  text-decoration: underline!important;
+  color: #7678e0!important; /* Set the desired hover color */
+}
+
+.form-check-label a {
+  color: #7678e0;
+  text-decoration: none !important;
+}
+
+.form-check-label a:hover
+{
+  text-decoration: underline!important;
+  color: #7678e0!important; /* Set the desired hover color */
+}
+
+.form-group {
+  position: relative;
+  /* existing styles */
+}
+
+.form-error {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  color: red;
+}

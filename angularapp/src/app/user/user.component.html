@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div [innerHtml]="target"> </div>
+  <ngx-spinner type="ball-scale-multiple"></ngx-spinner>
+  <div class="mb-5 mt-5" style="text-align:center;">
+    <div>
+      <span style="font-size: 35px;"><u>Student Dashboard</u></span>
+    </div>
+
+    <button class="btn btn-danger" style="margin-left: 1200px;" (click)="logoutUser()">Logout</button>
+  </div>
+
+
+      <div class="search-hero">
+        <input class="form-control" type="text" name="search"  [(ngModel)]= "userobj.search" autocomplete="off"
+          placeholder="search...">
+        <button class="btn btn-primary" style="margin-left: 10px;" (click)="searchUser()">Search</button>
+      </div>
+
+
+
+       <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Contact</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let st of studentData">
+                  <td>{{st.name}}</td>
+                  <td>{{st.email}}</td>
+                  <td>{{st.contact}}</td>
+                  <td><button class="btn btn-danger" (click)="deleteData(st.id)">Delete</button>
+                  <button class="btn btn-primary mx-2" routerLink="/edit/{{st.id}}">Edit</button>
+                </tr>
+              </tbody>
+
+      </table>
+
+</div>

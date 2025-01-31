@@ -1,0 +1,243 @@
+
+<!-- SIDEBAR -->
+<div [innerHtml]="target"> </div>
+<section id="sidebar">
+  <a href="#" class="brand">
+    <img src="../../assets/Unimarché_logo.png" style="width: 50px;">
+    <span class="text">UniMarket</span>
+  </a>
+  <ul class="side-menu top">
+    <li class="active">
+      <a href="#">
+        <i class="fas fa-tachometer-alt" style="color: black; "></i>
+        <span class="text">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fas fa-shopping-bag" style="color: black;"></i>
+        <span class="text">Orders</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fas fa-chart-pie" style="color: black;"></i>
+        <span class="text">Analytics</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fas fa-envelope" style="color: black;"></i>
+        <span class="text">Inbox</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fas fa-users" style="color: black;"></i>
+        <span class="text">Team</span>
+      </a>
+    </li>
+  </ul>
+  <ul class="side-menu">
+    <li>
+      <a href="#">
+        <i class="fas fa-cogs" style="color: black;"></i>
+        <span class="text">Settings</span>
+      </a>
+    </li>
+    <li>
+      <a class="logout" style="cursor: pointer;">
+        <i class="fas fa-sign-out-alt" style="color: #DB504A; "></i>
+        <span class="text"  (click)="logoutUser()">Logout</span>
+      </a>
+    </li>
+  </ul>
+</section>
+<!-- SIDEBAR -->
+
+
+
+<!-- CONTENT -->
+<section id="content">
+  <!-- NAVBAR -->
+  <nav>
+    <i  class="fas fa-bars" style="color: black; "></i>
+    <a href="#" class="nav-link"></a>
+    <form action="#">
+      <div class="form-input">
+        <input type="search" placeholder="Search...">
+        <button type="button" class="search-btn"><i class="fas fa-search"  ></i></button>
+      </div>
+    </form>
+  </nav>
+  <!-- NAVBAR -->
+
+  <!-- MAIN -->
+  <main>
+    <div class="head-title">
+      <div class="left">
+        <h1>Dashboard</h1>
+        <ul class="breadcrumb">
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li><i  class="fas fa-chevron-right" style="color: black; " ></i></li>
+          <li>
+            <a class="active" href="#">Users</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <ul class="box-info">
+      <li>
+        <i class="fas fa-calendar-check" ></i>
+        <span class="text">
+          <h3>20</h3>
+          <p>New Order</p>
+        </span>
+      </li>
+      <li>
+        <i class="fas fa-users" ></i>
+        <span class="text">
+          <h3>3</h3>
+          <p>New Customers</p>
+        </span>
+      </li>
+      <li>
+        <i class="fas fa-dollar-sign" ></i>
+        <span class="text">
+          <h3>2</h3>
+          <p>New Vendors</p>
+        </span>
+      </li>
+    </ul>
+
+
+    <div class="table-data">
+      <div class="order">
+        <div class="head">
+          <h3>Users Account</h3>
+          <i class="fas fa-search" style="color: black; "></i>
+          <i class="fas fa-filter"  style="color: black; "></i>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Date Created</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>Customer 1</p>
+              </td>
+              <td>09-05-2023</td>
+              <td><span class="status completed">Enable</span></td>
+              <td><!-- Vue -->
+                <a href="votre-url-ici" style="color:rgb(0, 0, 0) !important;" id="black" class="icon-link">
+                  <i class="fas fa-eye"style="color: black; "></i>
+                </a>
+                <!-- Edit -->
+                <a href="votre-url-ici" style="color:rgb(255, 191, 0) !important;" class="icon-link">
+                  <i class="fas fa-edit" style="color:rgb(255, 191, 0) "></i>
+                </a>
+                <!-- Supprimer -->
+                <a href="votre-url-ici" style="color:rgb(255, 0, 0) !important;" class="icon-link">
+                  <i class="fas fa-trash" style="color:rgb(255, 0, 0)"></i>
+                </a>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Vendor 1</p>
+              </td>
+              <td>10-05-2023</td>
+              <td><span class="status pending">Disable</span></td>
+              <td><!-- Vue -->
+                <a href="votre-url-ici" style="color:rgb(0, 0, 0);" id="black" class="icon-link">
+                  <i class="fas fa-eye" style="color: black; "></i>
+                </a>
+                <!-- Edit -->
+                <a href="votre-url-ici" style="color:rgb(255, 191, 0);" class="icon-link">
+                  <i class="fas fa-edit" style="color:rgb(255, 191, 0) "></i>
+                </a>
+                <!-- Supprimer -->
+                <a href="votre-url-ici" style="color:rgb(255, 0, 0);" class="icon-link">
+                  <i class="fas fa-trash" style="color:rgb(255, 0, 0)"></i>
+                </a>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Customer 2</p>
+              </td>
+              <td>11-05-2023</td>
+              <td><span class="status process">Pending</span></td>
+              <td><!-- Vue -->
+                <a href="votre-url-ici" style="color:rgb(0, 0, 0);" id="black" class="icon-link">
+                  <i class="fas fa-eye" style="color: black; "></i>
+                </a>
+                <!-- Edit -->
+                <a href="votre-url-ici" style="color:rgb(255, 191, 0);" id="black" class="icon-link">
+                  <i class="fas fa-edit" style="color:rgb(255, 191, 0) "></i>
+                </a>
+                <!-- Supprimer -->
+                <a href="votre-url-ici" style="color:rgb(255, 0, 0);" class="icon-link">
+                  <i class="fas fa-trash" style="color:rgb(255, 0, 0)"></i>
+                </a>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Vendor 2</p>
+              </td>
+              <td>11-05-2023</td>
+              <td><span class="status pending">Disable</span></td>
+              <td><!-- Vue -->
+                <a href="votre-url-ici" style="color:rgb(0, 0, 0);" id="black" class="icon-link">
+                  <i class="fas fa-eye" style="color: black; "></i>
+                </a>
+                <!-- Edit -->
+                <a href="votre-url-ici" style="color:rgb(255, 191, 0);" class="icon-link">
+                  <i class="fas fa-edit" style="color:rgb(255, 191, 0) "></i>
+                </a>
+                <!-- Supprimer -->
+                <a href="votre-url-ici" style="color:rgb(255, 0, 0);" class="icon-link">
+                  <i class="fas fa-trash" style="color:rgb(255, 0, 0)"></i>
+                </a>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Customer 3</p>
+              </td>
+              <td>13-05-2023</td>
+              <td><span class="status completed">Enable</span></td>
+              <td><!-- Vue -->
+                <a href="votre-url-ici" style="color:rgb(0, 0, 0);" id="black" class="icon-link">
+                  <i class="fas fa-eye" style="color: black; "></i>
+                </a>
+                <!-- Edit -->
+                <a href="votre-url-ici" style="color:rgb(255, 191, 0);" class="icon-link">
+                  <i class="fas fa-edit" style="color:rgb(255, 191, 0) "></i>
+                </a>
+                <!-- Supprimer -->
+                <a href="votre-url-ici" style="color:rgb(255, 0, 0);" class="icon-link">
+                  <i class="fas fa-trash" style="color:rgb(255, 0, 0)"></i>
+                </a>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+  <!-- MAIN -->
+</section>
+<!-- CONTENT -->
+

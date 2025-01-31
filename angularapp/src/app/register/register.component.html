@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+<div [innerHtml]="target"> </div>
+<div class="container">
+  <section class="body" style="margin-top: -150px; margin-right: 150px;">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+        <div class="card" style="border-radius: 15px; width: 746px; height: 748.4px;  " id="register">
+          <div class="fix" style="background-color: rgb(255 168 168 / 13%);">
+            <h2 class="text-uppercase text-center mb-5" style="font-weight: 500; color:black;">Create your customer account</h2>
+            <form #userForm="ngForm" (ngSubmit)="registerUser()" style="max-width: 500px; margin: 0 auto;">
+
+              <div class="form-group mb-4">
+                <label for="email" class="form-label" style="color: rgba(0,0,0,.6);">Name</label>
+                <input type="text" pattern="[a-zA-Z]+$" #userName="ngModel" class="form-control" name="name" [(ngModel)]="register.name" required minlength="3" maxlength="15">
+                <span *ngIf="userName.invalid && userName.touched && !userForm.submitted" class="form-error" style="color: red;">Please enter a valid name</span>
+              </div>
+
+              <div class="form-group mb-4">
+                <label for="pwd" class="form-label" style="color: rgba(0,0,0,.6);">Email</label>
+                <input type="email" #userEmail="ngModel" class="form-control" name="email" [(ngModel)]="register.email" required email>
+                <span *ngIf="userEmail.invalid && userEmail.touched && !userForm.submitted" class="form-error" style="color: red;">Please enter a valid email</span>
+              </div>
+
+              <div class="form-group mb-4">
+                <label for="contact" class="form-label" style="color: rgba(0,0,0,.6);">Contact</label>
+                <input type="text" class="form-control" name="contact" [(ngModel)]="register.contact" required pattern="[0-9]+$" #userContact="ngModel">
+                <span *ngIf="userContact.invalid && userContact.touched && !userForm.submitted" class="form-error" style="color: red;">Please enter a valid contact</span>
+              </div>
+
+              <div class="form-group mb-4">
+                <label for="pwd" class="form-label" style="color: rgba(0,0,0,.6);">Password</label>
+                <input type="password" class="form-control" name="password" [(ngModel)]="register.password" required #userPassword="ngModel">
+                <span *ngIf="userPassword.invalid && userPassword.touched && !userForm.submitted" class="form-error" style="color: red;">Please enter a valid password</span>
+              </div>
+              <div class="form-check d-flex justify-content-center mb-5">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                <label class="form-check-label" for="form2Example3g">
+                  I agree all statements in <a href="#!"  class="text-body" style="text-decoration: none !important;"><u>Terms of service</u></a>
+                </label>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-dark btn-block btn-lg text-white" style="width: 500px;">Register</button>
+              </div>
+
+              <p class="text-center text-muted mt-5 mb-0" style="color: #6c757d; font-size: medium;">Have already an account? <a href="/login" class="fw-bold text-body">Login here</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,110 @@
+.navbar {
+  background-color: #EEF4FF;
+}
+
+.container-fluid {
+  background-color: #EEF4FF;
+  min-height: 80px;
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  margin-left: 20px;
+  color: #337ab7;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+  float: left;
+}
+.navbar-brand:hover {
+  color: #246dbc;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 70px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: #EEF4FF;
+}
+
+.navbar-toggler-icon {
+  background-image: url('/assets/UniMarché-home.png');
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-link {
+    margin-right: 0;
+  }
+}
+
+.navbar-nav .nav-link {
+  list-style: none;
+}
+
+.btn {
+  margin-right: 10px;
+  margin-top: -8.5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #475467;
+}
+
+.btn-dark:hover {
+  background-color: #0c63e4;
+  border-color: #0c55d9;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.collapse{
+  margin-top: 5px;
+}
+.collapse ul {
+  margin-left: 55px;
+}
+
+.navbar-brand a {
+  font-size: 164px 38px;
+  color: #337ab7;
+  font-weight: bold;
+}
+
+.navbar-brand img {
+  width: 60px;
+  height: 37.64px;
+  margin-right: 10px;
+  margin-top: 5px;
+}

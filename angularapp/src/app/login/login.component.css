@@ -1,0 +1,35 @@
+.container{
+  margin-top: 200px;
+}
+.gradient-custom-2 {
+  background: #dbcab6;
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  background: linear-gradient(to right, #e8a87b, #ddbbbc, #ccaab7, #c3a5ba);
+}
+
+.title {
+  margin-top: 160px;
+  margin-bottom: 15px;
+}
+#logo{
+  width: 70px;
+  height: 50px;
+}
+#dont
+{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: black !important;
+font-weight: 400;
+font-size: 16px;}
+
+.form-group {
+  position: relative;
+  /* existing styles */
+}
+
+.form-error {
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  color: red;
+}
+
