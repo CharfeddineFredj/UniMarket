@@ -148,18 +148,22 @@ git clone https://github.com/CharfeddineFred/UniMarket.git
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page
+
 ![image](https://github.com/user-attachments/assets/43c92987-a8f2-4409-a7b0-d2efca9e5d9e)
 
 
 ### 🔑 Authentication Interface
+
 ![image](https://github.com/user-attachments/assets/a36b0ff9-8004-46e3-904e-30812f047e54)
 
 
 ### 🛠️ Admin Dashboard
+
 ![image](https://github.com/user-attachments/assets/3c07da31-3cf4-4c40-9568-79a4ee6fe710)
 
 
 ### 📩 Contact Administrator Interface
+
 ![image](https://github.com/user-attachments/assets/8cf857e5-1944-4073-8ba3-62d7ac2d4c5b)
 
 
